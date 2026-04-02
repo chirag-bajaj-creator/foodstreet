@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: foodstreet-api
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: MONGO_URI
+        scope: build
+      - key: JWT_SECRET
+        scope: build
+      - key: PORT
+        value: "5000"
+      - key: CLIENT_URL
+        scope: build
