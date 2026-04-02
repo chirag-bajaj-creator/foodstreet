@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import axios from 'axios';
+import axios from '../utils/axiosConfig';
 import io from 'socket.io-client';
 import { useSessionTimeout } from '../hooks/useSessionTimeout';
 
